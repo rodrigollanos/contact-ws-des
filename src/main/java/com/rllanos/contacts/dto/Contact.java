@@ -19,7 +19,15 @@ public class Contact implements Serializable {
 	 String lastName;
 	 String phoneNumber;
 	 String email;
+	 Integer age;
 	 
+	 
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -50,13 +58,15 @@ public class Contact implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Contact(Long id, String firstName, String lastName, String phoneNumber, String email) {
+	
+	public Contact(Long id, String firstName, String lastName, String phoneNumber, String email, Integer age) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
+		this.age = age;
 	}
 	@Override
 	public String toString() {

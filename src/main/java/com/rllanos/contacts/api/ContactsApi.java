@@ -17,7 +17,9 @@ public class ContactsApi {
 	
 	@RequestMapping(value="/contact", method=RequestMethod.GET)
     public Contact getById(){
-    return new Contact(1L, "Rodrigo", "Doe", "+57 311 222 3344", "john@sinbugs.com");
+		int edad=43;
+		
+    return new Contact(1L, "Rodrigo", "Llanos", "+57 311 222 3344", "john@sinbugs.com",edad);
 	}
 
    
